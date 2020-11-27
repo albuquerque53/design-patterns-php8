@@ -1,0 +1,10 @@
+{
+    "name": "albuquerque/design-patterns-php8",
+    "description": "Notes about designs patterns in PHP v8",
+    "license": "MIT",
+    "autoload": {
+      "psr-4": {
+        "Patterns\\": "src/"
+      }
+    }
+}
