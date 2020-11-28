@@ -92,7 +92,7 @@ class Maverick implements Car
     }
 }
 
-//This class is mencioned in line 34
+//This class is mencioned in line 38
 class MustangBoss implements Car
 {
     // Will do the 'same' as previous
