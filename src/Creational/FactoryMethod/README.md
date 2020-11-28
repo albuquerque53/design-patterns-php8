@@ -8,7 +8,7 @@ will be created.
 
 ## How to identify a Factory Method Pattern? :mag:
 
-You can identify a Factory method by their 'Creaction' classes and methods, that create objects from concrete classes and return them as Interface or Abstract classes.
+You can identify a Factory method by their 'Creation' classes and methods, that create objects from concrete classes and return them as Interface or Abstract classes.
 
 > Take a look in my Creation class (line 4) & Creation method (line 6) in [index.php](index.php) 
 
