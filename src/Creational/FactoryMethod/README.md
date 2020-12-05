@@ -6,11 +6,23 @@ Factory Method defines a method that can be used for creating objects without th
 (```new``` operator). The subclasses can override this method to change the classes of the objects 
 will be created.
 
-## How to identify a Factory Method Pattern? :mag:
+## Elements of Factory Pattern 
 
-You can identify a Factory method by their 'Creation' classes and methods, that create objects from concrete classes and return them as Interface or Abstract classes.
+### Product
 
-> Take a look in my Creation class (line 4) & Creation method (line 6) in [index.php](index.php) 
+Product is the interface of the class that we want to instanciate with Factory Method, for example, a Car Interface, Book Interface or a Product Interface.
+
+### Concrete Product 
+
+The concrete product is the class that will implements the Product interface, for example, the FordGT, the SherlockHolmes or even the Notebook class.
+
+### Creator
+
+The Creator is the abstract class that have the abstract Factory Method, this class is responsible for return a Product implementation (Concrete Product).
+
+### Concrete Creator
+
+This class extends the Creator class, is responsible to override the Factory Method to return a Concrete Product.
 
 ## Aplicability :memo:
 
