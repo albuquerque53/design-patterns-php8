@@ -13,6 +13,5 @@
 
 ## This repo contains
 
-* [Factory Method](https://github.com/albuquerque53/design-patterns-php8/tree/main/src/Creational/FactoryMethod)
-
-* [Singleton](https://github.com/albuquerque53/design-patterns-php8/tree/main/src/Creational/Singleton)
+* [Factory Method](Creational/FactoryMethod)
+* [Singleton](Creational/Singleton)
