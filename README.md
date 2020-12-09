@@ -15,3 +15,4 @@
 
 * [Factory Method](Creational/FactoryMethod)
 * [Singleton](Creational/Singleton)
+* [Facade](Structural/Facade)
