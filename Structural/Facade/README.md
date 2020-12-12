@@ -26,12 +26,12 @@ breaks the S.O.L.I.D principles when implemented.
 
 ### Open-Close Principle
 
-The open closed means that a Software Element must be **OPEN to EXTEND** but **CLOSED to MODIFY**, imagine if in my example, I want the UserPosts class, to implement that we gonna need to **MODIFY** the User facade, and this breaks this principle.
+The open closed means that a Software Element must be **OPEN for EXTENSION** but **CLOSED for MODIFICATIONS**, imagine if in my example, I want the UserPosts class, to implement that we gonna need to **MODIFY** the User facade in many parts, this need breaks the OP principle.
 
 ### Single Responsibility Principle
 
-The SRP says that a Software Element must have one responsibility, but many times, when we implements this pattern, we ended up developing a **super method** with too many responsibilities, like the ```deleteUser()```.
+The SRP says that a Software Element must have one responsibility, but many times, when we implements this pattern, we ended up developing a **super method** with too many responsibilities, like the ```deleteUser()``` in [User Facade](User/Facade/User.php).
 
 ## Use or not? :thinking:
 
-That's the question! My (very) humbe opinion is that you must analyze the situation and context, many times this pattern can give you headaches in the future, but I believe that in some situations the Facade can be very usefully.
+That's the question! My (very) humble opinion is that you must analyze the situation and context, many times this pattern can give you headaches in the future, but I believe that in some situations the Facade can be very usefully.
