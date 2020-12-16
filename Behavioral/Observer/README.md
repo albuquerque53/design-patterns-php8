@@ -6,21 +6,20 @@ Define a one-to-many dependency between objects so that when one object changes 
 
 ## An Example
 
-Imagine a loading screen, the load is a bar being complete, as the page load, the bar is filled, until reach 100%.
-
-We gonna will divide this screen in two, the logic (the real load) and the visual (the bar being filled).
-
-The observer pattern acts between these two layers, sending 'notifications' of logic to visual layer in real-time so that the bar is filled according with the state of logic layer.
-
-The visual layer **observing** the logic and getting the info.
+When a person subscribes in a newsletter, and every day, receives the news in your mailbox, the same person can subscribe in various newsletter and receive different news from different providers. The person are OBSERVING the news, and the news providers are sending notification every day or every breaking news.
 
 ## Participants
 
-### The Observer
+### Publisher
 
-The observer are notified when the **subject** state changes, we is always watching.
+Publisher is responsible to send notificiation to all yours subscribers. For that, this class must have a subscription infrastructure, for new subscribers, unsubscribe or notify subscribers.
 
-### The Subject
+### Subscriber
 
-The element that are observed, must send 'notifications' to their observers in every change.
+The Subscriber interface declares the notification method, in most cases consists in a update method, this method must be called every time by a Publisher to send the notifications to subscriber.
+
+### Concrete Subscriber
+
+The concrete subscriber must implements the interface method update.
+
 
