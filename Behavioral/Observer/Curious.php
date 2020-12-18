@@ -2,7 +2,15 @@
 
 class Curious implements \SplObserver
 {
-    public function __construct(public string $name)
+    /** 
+     * PHP 8 Feature: 
+     * Constructor Property Promotion 
+     * RFC: https://wiki.php.net/rfc/constructor_promotion
+     */
+    public function __construct(
+        public string $name,
+        protected ?array $latestNews = []
+    )
     {
         //
     }
@@ -15,7 +23,7 @@ class Curious implements \SplObserver
 
     public function readNews():void
     {
-        echo "\n\nSUBSCRIBER: Let me take a look...";
+        echo "\n\nSUBSCRIBER: Let me take a look...\n";
         print_r($this->latestNews);
     }
 }
