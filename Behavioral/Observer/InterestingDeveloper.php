@@ -2,9 +2,15 @@
 
 class InterestingDeveloper implements \SplObserver
 {
-    protected $latestNews;
-
-    public function __construct(public string $name)
+    /** 
+     * PHP 8 Feature: 
+     * Constructor Property Promotion 
+     * RFC: https://wiki.php.net/rfc/constructor_promotion
+     */
+    public function __construct(
+        public string $name,
+        protected ?array $latestNews = []
+    )
     {
         //
     }
