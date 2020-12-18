@@ -10,7 +10,7 @@ When a person subscribes in a newsletter, and every day, receives the news in yo
 
 ## Participants :busts_in_silhouette:
 
-### Publisher :page_facing_up
+### Publisher :page_facing_up:
 
 Publisher is responsible to send notificiation to all yours subscribers. For that, this class must have a subscription infrastructure, for new subscribers, unsubscribe or notify subscribers.
 
