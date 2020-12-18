@@ -14,12 +14,17 @@ When a person subscribes in a newsletter, and every day, receives the news in yo
 
 Publisher is responsible to send notificiation to all yours subscribers. For that, this class must have a subscription infrastructure, for new subscribers, unsubscribe or notify subscribers.
 
-### Subscriber
+> In PHP, publish must implements the [SplSubject](https://php.net/manual/en/class.splsubject.php) interface
+> [Publisher Example](TechNewsletter.php)
+### Subscriber (ObserverInterface)
 
 The Subscriber interface declares the notification method, in most cases consists in a update method, this method must be called every time by a Publisher to send the notifications to subscriber.
 
-### Concrete Subscriber
+> In PHP, the subscriber is already set, as [SplObserver](https://www.php.net/manual/en/class.splobserver.php)
+### Concrete Subscriber (Observer)
 
 The concrete subscriber must implements the interface method update.
 
+> [Subscriber example 1](InterestingDeveloper.php)
+> [Subscriber example 2](Curious.php)
 
