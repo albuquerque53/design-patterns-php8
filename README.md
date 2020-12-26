@@ -17,3 +17,4 @@
 * [Singleton](Creational/Singleton)
 * [Facade](Structural/Facade)
 * [Observer](Behavioral/Observer)
+* [Adapter](Structural/Adapter)
